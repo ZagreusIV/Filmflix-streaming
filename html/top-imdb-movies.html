@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../Res/film.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="../Res/film.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="../css/top-imdbm.css">
+    <link rel="stylesheet" href="../css/navbody.css">
+    <link rel="stylesheet" href="../css/movies.css">
+    <title>Top Rated Movies</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">
+            <a href="home.html"><img src="../Res/film.png" alt="Logo"></a>
+        </div>
+        <div class="navbar-links">
+            <a href="home.html" style="color: rgb(255, 111, 0);"><button class="dropbtn">Home</button></a>
+            <a href="movies.html"><button class="dropbtn">Movies</button></a>
+            <a href="shows.html"><button class="dropbtn">Shows</button></a>
+                  <div class="dropdown">
+                    <button class="dropbtn">Top Rated</button>
+                    <div class="dropdown-content">
+                    <a href="top-imdb-movies.html">Movies</a>
+                    <a href="top-imdb-shows.html">TV Shows</a>
+                    </div>
+                  </div>
+        </div>
+        <div class="navbar-right">
+            <form id="search-form" onsubmit="handleSearch(event);" role="search">
+                <label for="search">Search for movies and shows</label>
+                <input id="search-input" type="search" placeholder="Search..." autofocus required class="search" />
+                <img src="../Res/search-interface-symbol.png" alt="search" class="search-glass">
+                <!-- <button type="submit">Search</button> -->
+            </form>
+        
+            <div class="Login">
+                <a href="login.html"><span>Log in</span></a>
+            </div>
+        </div>
+    </div>
+    <h2 class="page-name">Top rated Movies</h2>
+    <div class="movies">
+        <div class="movie-container"></div>
+    </div>
+    <div class="pagination">
+        <div id="page-numbers"></div>
+    </div>
+    <footer class="">
+        <div class="footer-elements">
+            <div class="footer-links">
+                <ul class="links-list">
+                    <li>
+                        <a href="terms.html" target="_blank">Terms of service</a>
+                    </li>
+                    <li>
+                        <a href="privacy.html" target="_blank">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ZagreusIV" target="_blank">Github</a>
+                    </li>
+                    <li>
+                        <a href="mailto:mouadboudhar69@gmail.com" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr />
+            <div class="copyright">
+                <span>© 2024 <a href="home.html">Filmflix™</a>. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/searchbar.js"></script>
+    <script src="../js/top-imdb-movies.js"></script>
+</body>
+</html>

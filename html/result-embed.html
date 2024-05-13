@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Res/film.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="../Res/film.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="../css/navbody.css">
+    <link rel="stylesheet" href="../css/movies.css">
+    <link rel="stylesheet" href="../css/embed-result.css">
+    <title>Movie</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">
+            <a href="home.html"><img src="../Res/film.png" alt="Logo"></a>
+        </div>
+        <div class="navbar-links">
+            <a href="home.html" style="color: rgb(255, 111, 0);"><button class="dropbtn">Home</button></a>
+            <a href="movies.html"><button class="dropbtn">Movies</button></a>
+            <a href="shows.html"><button class="dropbtn">Shows</button></a>
+            <div class="dropdown">
+                <button class="dropbtn">Top Rated</button>
+                <div class="dropdown-content">
+                    <a href="top-imdb-movies.html">Movies</a>
+                    <a href="top-imdb-shows.html">TV Shows</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <form id="search-form" onsubmit="handleSearch(event);" role="search">
+                <label for="search">Search for movies and shows</label>
+                <input id="search-input" type="search" placeholder="Search..." autofocus required class="search" />
+                <img src="../Res/search-interface-symbol.png" alt="search" class="search-glass">
+                <!-- <button type="submit">Search</button> -->
+            </form>
+
+            <div class="Login">
+                <a href="login.html"><span>Log in</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div id="movie-embed-container"></div>
+        <div id="ublock-message">
+            <p>
+                None of the ads that you get are from this website, they are from the video hosting servers. I would
+                recommend using an adblocker such as <a href="https://ublockorigin.com/" target="_blank">uBlock
+                    Origin</a> for an optimal watching experience.
+            </p>
+            <p>
+                If the video does not load, try using another server or refreshing the page.
+            </p>
+            <span class="x-button" onclick="hideUblockMessage()">x</span>
+        </div>
+    </div>
+    <div id="movie-info-container"></div>
+    <footer class="">
+        <div class="footer-elements">
+            <div class="footer-links">
+                <ul class="links-list">
+                    <li>
+                        <a href="terms.html" target="_blank">Terms of service</a>
+                    </li>
+                    <li>
+                        <a href="privacy.html" target="_blank">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ZagreusIV" target="_blank">Github</a>
+                    </li>
+                    <li>
+                        <a href="mailto:mouadboudhar69@gmail.com" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr />
+            <div class="copyright">
+                <span>© 2024 <a href="home.html">Filmflix™</a>. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/movie-embed.js"></script>
+    <script src="../js/searchbar.js"></script>
+    <script src="../js/movies.js"></script>
+    <script>
+        function hideUblockMessage() {
+            var ublockMessage = document.getElementById('ublock-message');
+            ublockMessage.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

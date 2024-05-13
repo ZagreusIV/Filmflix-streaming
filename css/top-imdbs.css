@@ -1,0 +1,18 @@
+.show-div:hover .rating{
+    transition: 0.2s;
+    opacity: 0.4;
+}
+
+.rating{
+    z-index: 2;
+  transition: 0.2s;
+  position: absolute;
+  top: 14px;
+  right: 5px;
+  background-color: gold;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}

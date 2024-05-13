@@ -1,0 +1,180 @@
+.page-name{
+    font-size: 30px;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.pagination img{
+    filter: invert(100%);
+}
+
+.pagination button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+tr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+td {
+    flex: 1 0 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+
+.show-container a{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.show-info {
+    font-size: 15px;
+    height: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.show-info a:hover {
+    color: rgb(250, 5, 70);
+}
+
+.show-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.show-image {
+    display: block;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    transition: transform 0.3s, margin 0.3s;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.show-div:hover .show-image {
+    transform: scale(1.02);
+}
+
+.show-div:hover .rating{
+    transition: 0.2s;
+    opacity: 0.4;
+}
+
+.rating{
+  transition: 0.2s;
+  position: absolute;
+  top: 14px;
+  right: 5px;
+  background-color: gold;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.Shows-Header {
+    font-size: 30px;
+    color: #fff;
+    padding: 30px;
+}
+
+.shows {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px;
+}
+
+.show-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.pagination button {
+    transition: 0.3s;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+    color: #fff;
+    font-size: 25px;
+    margin: 2px;
+}
+
+.pagination button:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    color: rgb(250, 5, 70);
+    border-color: rgb(250, 5, 70);
+}
+
+.pagination img{
+    filter: invert(100%);
+}
+
+.pagination button img {
+    width: 20px;
+    height: 20px;
+}
