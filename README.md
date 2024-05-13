@@ -1,2 +1,2 @@
 # Filmflix-streaming
-Website to watch movies and shows using the TMDB and Vidstreaming APIs.
+A simple website to watch movies and shows using the TMDB and Vidstreaming APIs.
