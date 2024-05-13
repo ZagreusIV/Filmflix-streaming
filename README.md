@@ -9,5 +9,5 @@
 
 ![Homw Page.](Filmflix.png)
 
-Don't forget to put in the api in order to fetch the data from the moviedb api, You can get the api key by signing up on the moviedb website.
+Don't forget to put in the api in order to fetch the data from the moviedb api, You can get the api key by signing up on the [TMDB](https://www.themoviedb.org/) website.
 That's pretty much it, you are free to use the code and modify it as you like. 
