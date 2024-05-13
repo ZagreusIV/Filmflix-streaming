@@ -8,3 +8,6 @@
 > This is just a school project, and is not intended for commercial use, it is also my first project using HTML, CSS, and JavaScript, I hope you find it interesting.
 
 ![Homw Page.](Filmflix.png)
+
+Don't forget to put in the api in order to fetch the data from the moviedb api, You can get the api key by signing up on the moviedb website.
+That's pretty much it, you are free to use the code and modify it as you like. 
